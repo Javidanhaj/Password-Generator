@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password generator</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,10 +19,12 @@
             <label><input type="checkbox" id="includeUppercase"> Include Uppercase Letters</label><br>
             <label><input type="checkbox" id="includeSpecialChars"> Include Special Characters</label><br>
         </form>
-        <p id="passwordDisplay"></p>
+        <div id="passwordContainer">
+            <p id="passwordDisplay"></p>
+            <button id="copyButton" onclick="copyPassword()" style="display: none;">Copy</button>
+        </div>
     </div>
     <button onclick="generatePassword()">Generate</button>
-
 
     <script src="index.js"></script>
 </body>

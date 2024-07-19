@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background-color: hsl(217, 46%, 37%);
     margin: 0;
@@ -6,7 +6,6 @@ body{
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    
 }
 
 #container {
@@ -24,21 +23,27 @@ body{
     display: flex;
     align-items: center;
     margin: 5px 0;
-    
 }
 
-#len{
+#len {
     color: hsl(239, 100%, 22%);
+}
+
+#passwordContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 #passwordDisplay {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 20px;
     color: #333;
+    margin-right: 10px;
 }
 
-#textBox{
+#textBox {
     font-size: 2rem;
     text-align: center;
     width: 150px;
@@ -48,7 +53,7 @@ body{
     border: none;
 }
 
-button{
+button {
     font-size: 1.75rem;
     padding: 15px 25px;
     border-radius: 10px;
@@ -59,10 +64,29 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: hsl(210, 100%, 60%);
 }
 
-button:active{
+button:active {
+    background-color: hsl(210, 100%, 70%);
+}
+
+#copyButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: hsl(210, 100%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#copyButton:hover {
+    background-color: hsl(210, 100%, 60%);
+}
+
+#copyButton:active {
     background-color: hsl(210, 100%, 70%);
 }
